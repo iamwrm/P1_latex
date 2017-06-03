@@ -1,7 +1,0 @@
-Group name: Trinity
-
-* Manual 
-** DONE repo init 
-   CLOSED: [2017-06-03 Sat 17:25]
-** TODO file structure 
-
