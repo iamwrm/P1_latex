@@ -22,19 +22,29 @@
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
 
+\usepackage{graphicx}
+
+
+
+% =============================
 \begin{document}
 
 \linespread{2}
 
+% =============================
 \input{part/cover}
+% =============================
 
 \rhead{\textsc{Group 3}}
+\lhead{\includegraphics[height=1cm]{picture/umjiLogo}}
+
 \tableofcontents
 \newpage
 
-\input{part/intro}
-\input{part/mater}
-\input{part/impro}
-\input{part/refer}
+\input{part/introduction} % introduction
+\input{part/designOverView} % design over view
+\input{part/material} % material
+\input{part/improvement} % improvement
+\input{part/reference} % reference
 
 \end{document}
