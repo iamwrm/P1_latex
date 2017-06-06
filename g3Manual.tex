@@ -1,9 +1,9 @@
+%NOTE: main file of the latex eg. entries 
 \documentclass[12pt,a4paper]{article}
 
 \usepackage[letterpaper]{geometry}
 \usepackage{times}
 \geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
-
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -25,7 +25,6 @@ VG100
 \renewcommand{\headrulewidth}{0pt} 
 \renewcommand{\footrulewidth}{0pt} 
 
-
 \setlength\headsep{0.333in}
 
 \usepackage{fontspec}
@@ -33,28 +32,33 @@ VG100
 
 \usepackage{graphicx}
 
-
-
 \title{Group3P1Manual}
 \author{Ren Wang}
-% =============================
+
+% ===========================================
+
 \begin{document}
 
 \linespread{2}
 
-% =============================
+% ===========================================
+
 \input{part/cover}
+
 % =============================
 
-%\rhead{\textsc{Group 3}}
 \rhead{\includegraphics[height=0.8cm]{picture/teamLogo}}
 \lhead{\includegraphics[height=0.8cm]{picture/umjiLogo}}
 \cfoot{\thepage} 
 \renewcommand{\headrulewidth}{0.4pt} 
 \renewcommand{\footrulewidth}{0.4pt} 
 
+% =============================
+
 \tableofcontents
 \newpage
+
+% =============================
 
 \input{part/introduction} % introduction
 \newpage
@@ -67,5 +71,7 @@ VG100
 \input{part/improvement} % improvement
 \newpage
 \input{part/appendix} % appendix reference
+
+% =============================
 
 \end{document}
