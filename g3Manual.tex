@@ -1,6 +1,8 @@
 %NOTE: main file of the latex eg. entries 
 \documentclass[12pt,a4paper]{article}
 
+%\setlength{\headheight}{210pt} 
+
 \usepackage[letterpaper]{geometry}
 \usepackage{times}
 \geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
@@ -52,19 +54,24 @@ VG100
 % =============================
 
 \lhead{%
-  \includegraphics[height=0.8cm]{picture/umjiLogo}
-  \includegraphics[height=0.8cm]{picture/teamLogo}
+  \includegraphics[height=1cm]{picture/umjiLogo}
 }
 
 \rhead{
-\begin{tabular}{cc}
-%\multicolumn{2}{\textsc{Group 3}}\\
+\begin{tabular}{cl}
 Prof. & Yanfeng \textsc{Shen} \\
 Prof. & Cynthia \textsc{Vagnetti} 
 \end{tabular}
 }
 
-\cfoot{\thepage} 
+\cfoot{
+\includegraphics[height=0.8cm]{picture/teamLogo}  
+Group 3
+}
+\rfoot{
+\thepage
+}
+
 \renewcommand{\headrulewidth}{0.4pt} 
 \renewcommand{\footrulewidth}{0pt} 
 
