@@ -51,11 +51,22 @@ VG100
 
 % =============================
 
-\rhead{\includegraphics[height=0.8cm]{picture/teamLogo}}
-\lhead{\includegraphics[height=0.8cm]{picture/umjiLogo}}
+\lhead{%
+  \includegraphics[height=0.8cm]{picture/umjiLogo}
+  \includegraphics[height=0.8cm]{picture/teamLogo}
+}
+
+\rhead{
+\begin{tabular}{cc}
+%\multicolumn{2}{\textsc{Group 3}}\\
+Prof. & Yanfeng \textsc{Shen} \\
+Prof. & Cynthia \textsc{Vagnetti} 
+\end{tabular}
+}
+
 \cfoot{\thepage} 
 \renewcommand{\headrulewidth}{0.4pt} 
-\renewcommand{\footrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0pt} 
 
 % =============================
 
