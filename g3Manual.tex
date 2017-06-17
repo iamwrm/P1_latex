@@ -38,6 +38,10 @@ VG100
 
 \usepackage{caption}
 
+\usepackage{indentfirst}
+
+\usepackage{setspace}
+
 \title{Group3P1Manual}
 \author{Ren Wang}
 
@@ -45,7 +49,6 @@ VG100
 
 \begin{document}
 
-\linespread{2}
 
 % ===========================================
 
@@ -58,20 +61,20 @@ VG100
 }
 
 \rhead{
-\raisebox{2ex}{%
-\begin{tabular}{cl}
-Prof. & Yanfeng \textsc{Shen} \\
-Prof. & Cynthia \textsc{Vagnetti} 
-\end{tabular}
-}
+  \raisebox{2ex}{%
+    \begin{tabular}{cl}
+    Prof. & Yanfeng \textsc{Shen} \\
+    Prof. & Cynthia \textsc{Vagnetti} 
+    \end{tabular}
+  }
 }
 
 \cfoot{
-\includegraphics[height=1cm]{picture/teamLogo}  
-\raisebox{2ex}{Group 3}%
+  \includegraphics[height=1cm]{picture/teamLogo}  
+  \raisebox{2ex}{Group 3}%
 }
 \rfoot{
-\thepage
+  \thepage
 }
 
 \renewcommand{\headrulewidth}{0.4pt} 
@@ -79,11 +82,13 @@ Prof. & Cynthia \textsc{Vagnetti}
 
 % =============================
 
+\onehalfspacing
 \tableofcontents
 \newpage
 
 % =============================
 
+\doublespacing
 \input{part/introduction} % introduction
 \newpage
 \input{part/designOverview} % design overview
