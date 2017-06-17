@@ -1,4 +1,59 @@
 \section{Design Overview}
 \subsection{Bridge}
 \subsection{Cart}
+The cart has ten main parts to fulfill the requirements: base, servo, wheel,
+motor, battery, Arduino Board, Motor Driver and voltage transformer.
+
+Base: Carbon Fibre  
+Although we considered using Acrylic board, the fact that it is too thick, too
+heavyand easy to break make us decide to use carbon fibre.
+Carbon fibre is much lighter and stronger.
+It also has a better looking. 
+
+Servo: MG996R 
+We decided to use servo instead of motor to lift water because servo is more
+powerful and easy to assemble. 
+The first type we used is P0090.
+It was not powerful enough.
+So we finally choose MG996R. 
+
+Wheel: 3D-printed Plastic Wheel 
+In order to fit the bridge, and meanwhile lower the influence to other parts of
+the cart, we decided to print our own wheels in 3D.
+The specially made wheels match the bridge well and guide the cart’s direction.
+
+Motor:  gear motor N20 
+At first, we believe the high speed motor like 130 and 180 would give our cart
+extraordinary speed.
+But they were not powerful enough to move the cart on the bridge.
+Also, the high speed motor has difficulty while stopping.
+So we finally choose N20 gear motor.
+It becomes slower but more powerful and stable.
+In addition, N20 is also lighter than any high speed motor.  
+
+Battery: 11.1V Battery 
+The battery we chose has voltage 11.1V, which can well charge the Arduino board,
+the motor board and the servo.
+We choose 11.1V because we can have more choices of voltage using transformer.
+We can adjust the speed of motor and servo eassily.  
+
+Arduino Board: UNO 
+We first used Arduino NANO which was very light and small; however, we found it
+too unreliable and not proper enough to be assemble on the cart, so we changed
+to Arduino UNO.
+It can provide all the functions we need stalely with a little weight increase.
+
+Motor Driver: Motor Driver L9110 
+We first used Motor Driver L298n, which was provided by our project instructor;
+however, we found the cooling n too heavy and to a certain degree useless for
+our low-power cart, so we changed to Motor Driver L9110.
+
+Voltage transformer:
+First, we did not use transformer to power the servo but Arduino board.
+It takes more than 5 seconds to pull up the water.
+After taking some calculation, the increase in voltage will shorten the time to
+70\%.
+So we finally applied transformer and lower the 11.1V from battery to 7.4V to
+power the servo.
+
 \subsection{Overall}
