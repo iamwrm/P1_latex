@@ -4,4 +4,5 @@ all:
 	xelatex g3Manual
 # 	bibtex g3_manual
 	(rm -rf *.ps *.log *.dvi *.aux *.*% *.lof *.lop *.lot *.toc *.idx *.ilg *.ind *.bbl *blg)
+	cp g3Manual.pdf pdfoutput/g3Manual.pdf
 	open *.pdf
