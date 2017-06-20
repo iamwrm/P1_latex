@@ -23,9 +23,16 @@
 \newcommand{\CounterOfM}{\stepcounter{matcnt}\arabic{matcnt}}
 % CounterOfM means the counter of materials
 %
+\newcounter{figcnt}
+\setcounter{figcnt}{0}
+\newcommand{\CounterOfF}{\stepcounter{figcnt}\arabic{figcnt}}
 
 \begin{center}
+\raisebox{4cm}{
+    \LARGE \CounterOfF  \vspace{0.5cm}}
 \includegraphics[height=5cm]{picture/material/a4paper}
+\raisebox{4cm}{
+    \LARGE \CounterOfF}
 \includegraphics[height=5cm]{picture/material/whiteglue}
 \end{center}
 
@@ -41,8 +48,14 @@
 % images
 
 \begin{center}
+\raisebox{2cm}{
+    \LARGE \CounterOfF}
 \includegraphics[height=3cm]{picture/material/papercutter}
+\raisebox{2cm}{
+    \LARGE \CounterOfF}
 \includegraphics[height=3cm]{picture/material/brush}
+\raisebox{2cm}{
+    \LARGE \CounterOfF}
 \includegraphics[height=3cm]{picture/material/woodstick}
 \end{center}
 
