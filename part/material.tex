@@ -20,19 +20,28 @@
 % counter
 \newcounter{matcnt}
 \setcounter{matcnt}{0}
-\newcommand{\CounterOfM}{\stepcounter{matcnt}\arabic{matcnt}}
+\newcommand{\CounterOfM}{
+    \stepcounter{matcnt}\arabic{matcnt}
+}
 % CounterOfM means the counter of materials
 %
 \newcounter{figcnt}
 \setcounter{figcnt}{0}
-\newcommand{\CounterOfF}{\stepcounter{figcnt}\arabic{figcnt}}
+\newcommand{\CounterOfF}{
+    \stepcounter{figcnt}\arabic{figcnt}
+}
+
+\newcommand{\CounterOfFa}[1]{
+    \raisebox{#1cm}{
+        \fbox{\Large \CounterOfF} \hspace{0.3cm}
+    }
+    \nolinebreak[3]
+}
 
 \begin{center}
-\raisebox{4cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{4}
 \includegraphics[height=5cm]{picture/material/a4paper}
-\raisebox{4cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{4}
 \includegraphics[height=5cm]{picture/material/whiteglue}
 \end{center}
 
@@ -48,14 +57,11 @@
 % images
 
 \begin{center}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/papercutter}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/brush}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/woodstick}
 \end{center}
 
@@ -74,20 +80,15 @@
 
 % images
 \begin{center}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/xtwduinoNano}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/standN20}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/moterN20}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/wheelrubber}
-\raisebox{2cm}{
-    \LARGE \CounterOfF \hspace{0.3cm}}
+\CounterOfFa{3}
 \includegraphics[height=3cm]{picture/material/servo360}
 \end{center}
 % tables
@@ -97,7 +98,7 @@
 \CounterOfM & N20 Moter & 12v 150rpm & 1 & 19.80 \\
 \CounterOfM & Rubber Wheel  & Diameter: 43 mm  &  2  & 5.4 \\
 \CounterOfM & TowerPro 360Degree servo &MG946R  & 1 & 38\\
-\CounterOfM &  Plane model Battery & 7.4 &1  & 37.8\\
+\CounterOfM & Plane model Battery & 7.4 &1  & 37.8\\
 \MyTabularEnd
 
 \subsubsection{Tools}
