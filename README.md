@@ -3,6 +3,7 @@
 Manual for project 1 
 Latex project
 
+This project is under macOS 12 and Tex Live 2016
 
 ## Directory information:
 /part 
