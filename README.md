@@ -19,5 +19,11 @@ Latex project
 
 ## Great Success on GameDay! 
 Under Construction
+TODO:
+- cart materials and tools table and image
+- access URL
+- overall design overview
+- bridge procedure image
+- experience sharing 
 
 Author: Ren Wang iamwrm@gmail.com
