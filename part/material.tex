@@ -38,11 +38,14 @@
     \nolinebreak[3]
 }
 
+\newcommand{\MyPicGroup}[3]{
+    \CounterOfFa{#1}
+    \includegraphics[height=#2cm]{picture/material/#3}
+}
+
 \begin{center}
-\CounterOfFa{4}
-\includegraphics[height=5cm]{picture/material/a4paper}
-\CounterOfFa{4}
-\includegraphics[height=5cm]{picture/material/whiteglue}
+\MyPicGroup{4}{5}{a4paper}
+\MyPicGroup{4}{5}{whiteglue}
 \end{center}
 
 % tables
@@ -79,17 +82,15 @@
 \subsubsection{Materials}
 
 % images
+\newcommand{\HeightOfThePicInCM}{2}
+\newcommand{\HeightOfThePicRaisedInCM}{2}
 \begin{center}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/xtwduinoNano}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/standN20}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/moterN20}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/wheelrubber}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/servo360}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{xtwduinoNano}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{standN20}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{moterN20}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{wheelrubber}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{servo360}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{batteryPlane}
 \end{center}
 % tables
 \beginMyTabular
