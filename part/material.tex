@@ -6,7 +6,7 @@
 
 \newcommand{\beginMyTabular}{
     \begin{center}
-    \begin{tabular}{p{0.4cm}p{5cm}p{7cm}rr}
+    \begin{tabular}{p{0.4cm}p{5cm}p{5cm}rr}
     \hline
     No. & Item & Specification & Quantity & Price(Yuan) \\
     \hline
@@ -43,9 +43,16 @@
     \includegraphics[height=#2cm]{picture/material/#3}
 }
 
+
+%% ====================================================
+%% ====================================================
+%% ====================================================
+
+\newcommand{\HeightOfThePicRaisedInCM}{4}
+\newcommand{\HeightOfThePicInCM}{5}
 \begin{center}
-\MyPicGroup{4}{5}{a4paper}
-\MyPicGroup{4}{5}{whiteglue}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{a4paper}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{whiteglue}
 \end{center}
 
 % tables
@@ -58,14 +65,12 @@
 \subsubsection{Tools}
 
 % images
-
+\renewcommand{\HeightOfThePicRaisedInCM}{3}
+\renewcommand{\HeightOfThePicInCM}{3}
 \begin{center}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/papercutter}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/brush}
-\CounterOfFa{3}
-\includegraphics[height=3cm]{picture/material/woodstick}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{papercutter}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{brush}
+\MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{woodstick}
 \end{center}
 
 
@@ -82,8 +87,8 @@
 \subsubsection{Materials}
 
 % images
-\newcommand{\HeightOfThePicInCM}{2}
-\newcommand{\HeightOfThePicRaisedInCM}{2}
+\renewcommand{\HeightOfThePicRaisedInCM}{2}
+\renewcommand{\HeightOfThePicInCM}{2}
 \begin{center}
 \MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{xtwduinoNano}
 \MyPicGroup{\HeightOfThePicRaisedInCM}{\HeightOfThePicInCM}{standN20}
